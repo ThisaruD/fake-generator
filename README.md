@@ -16,7 +16,7 @@ for your needs of dummy data in project development
 To install the ppackage, follow these steps:
 
 1. Open your terminal in project directory
-2. Run `npm install fake-data-generator` to install dependencies.
+git starts2. Run `npm install fake-generator` to install dependencies.
 
 ### Usage
 
@@ -44,6 +44,9 @@ console.log(fakeGenerator.getFakeEmail(firsName,lastName))// get fake email for 
 ## Contributing
 
 If you'd like to contribute to this project, You can send your pull requests directly.
+ [github](https://github.com/ThisaruD/fake-generator)
+
+
 
 ## License
 
