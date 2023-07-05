@@ -16,7 +16,7 @@ for your needs of dummy data in project development
 To install the ppackage, follow these steps:
 
 1. Open your terminal in project directory
-git starts2. Run `npm install fake-generator` to install dependencies.
+2. Run `npm install fake-generator` to install dependencies.
 
 ### Usage
 
