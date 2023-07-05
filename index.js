@@ -36,9 +36,6 @@ function getFakeAddress() {
   function getFakeEmail(firstName, lastName) {
     const emailProviders = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com", "aol.com", "icloud.com", "protonmail.com", "mail.com", "zoho.com", "yandex.com", "live.com", "msn.com", "cox.net", "sbcglobal.net", "att.net", "verizon.net", "rocketmail.com", "me.com", "gmx.com", "fastmail.com", "tutanota.com", "mailinator.com", "inbox.com", "optonline.net", "earthlink.net", "aim.com", "charter.net", "mac.com", "juno.com", "netzero.net", "wowway.com", "windstream.net", "mail.ru", "bellsouth.net", "frontier.com", "ymail.com", "roadrunner.com", "comcast.net", "centurylink.net", "bigpond.com", "telus.net", "shaw.ca", "sympatico.ca", "blueyonder.co.uk", "ntlworld.com", "virginmedia.com", "btinternet.com", "sky.com", "talktalk.net", "orange.fr", "web.de", "t-online.de", "alice.it", "libero.it", "tin.it", "abv.bg", "wp.pl", "o2.pl", "interia.pl", "onet.pl", "rambler.ru", "yandex.ru", "ukr.net", "inbox.ru", "list.ru", "bk.ru", "rambler.com", "rediffmail.com", "indiatimes.com", "yahoo.co.in", "hotmail.co.uk", "btinternet.com", "ntlworld.com", "virginmedia.com", "talktalk.net", "sky.com", "orange.fr", "web.de", "t-online.de", "alice.it", "libero.it", "tin.it"];
 
-    const [firstName, lastName] = getFakeName().split(" ")
-
-  
     const randomProvider = emailProviders[Math.floor(Math.random() * emailProviders.length)];
     const randomUsername = `${firstName.toLowerCase()}.${lastName.toLowerCase()}${Math.floor(Math.random() * 100)}`;
   
@@ -48,6 +45,11 @@ function getFakeAddress() {
 
   function getFakeEmail() {
     const emailProviders = ["gmail.com", "yahoo.com", "outlook.com", "hotmail.com", "aol.com", "icloud.com", "protonmail.com", "mail.com", "zoho.com", "yandex.com", "live.com", "msn.com", "cox.net", "sbcglobal.net", "att.net", "verizon.net", "rocketmail.com", "me.com", "gmx.com", "fastmail.com", "tutanota.com", "mailinator.com", "inbox.com", "optonline.net", "earthlink.net", "aim.com", "charter.net", "mac.com", "juno.com", "netzero.net", "wowway.com", "windstream.net", "mail.ru", "bellsouth.net", "frontier.com", "ymail.com", "roadrunner.com", "comcast.net", "centurylink.net", "bigpond.com", "telus.net", "shaw.ca", "sympatico.ca", "blueyonder.co.uk", "ntlworld.com", "virginmedia.com", "btinternet.com", "sky.com", "talktalk.net", "orange.fr", "web.de", "t-online.de", "alice.it", "libero.it", "tin.it", "abv.bg", "wp.pl", "o2.pl", "interia.pl", "onet.pl", "rambler.ru", "yandex.ru", "ukr.net", "inbox.ru", "list.ru", "bk.ru", "rambler.com", "rediffmail.com", "indiatimes.com", "yahoo.co.in", "hotmail.co.uk", "btinternet.com", "ntlworld.com", "virginmedia.com", "talktalk.net", "sky.com", "orange.fr", "web.de", "t-online.de", "alice.it", "libero.it", "tin.it"];
+
+    var fullName = getFakeName().split(" ")
+
+    var firstName = fullName[0];
+    var lastName = fullName[1];
 
     const randomProvider = emailProviders[Math.floor(Math.random() * emailProviders.length)];
     const randomUsername = `${firstName.toLowerCase()}.${lastName.toLowerCase()}${Math.floor(Math.random() * 100)}`;
